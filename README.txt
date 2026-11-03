@@ -1,8 +1,9 @@
-Word Float スマホ版
+Word Float v2: スマホ対応・Wikipediaランダム/新着記事・造語/ネット用語・トレンド
 
-1. フォルダ内のファイルをすべてGitHub Pages等のHTTPS対応ホスティングに公開します。
-2. iPhone: Safariで公開URLを開き、共有→ホーム画面に追加。
-3. Android: Chromeで公開URLを開き、メニュー→ホーム画面に追加/アプリをインストール。
-4. インストール後はオフラインでも内蔵単語で動きます。Wikipediaからの新規取得にはネット接続が必要です。
-
-注意: index.htmlを単体で開くだけではスマホのホーム画面アプリとしてのPWA機能は有効になりません。HTTPSで公開してください。
+GitHub Pagesにリポジトリの全ファイルをアップロードしてください。
+.github/workflows/trends.yml はフォルダ構造を維持してください。
+GitHub Actions > Update public trends > Run workflow を一度実行すると trends.json が更新されます。
+Settings > Actions > General > Workflow permissions で Read and write permissions が必要な場合があります。
+以後は約3時間おきに更新（GitHub側の遅延あり）。Google Trends/Google News RSSが利用できない場合は既存のデータを保持します。
+X/Twitter公式APIは未接続です。Xのトレンドを直接取得したと誤認しないでください。
+GitHub Pagesは公開サイトなので、アップロードするファイルや追加した単語は公開されます。
